@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.aidlserver.IImoocAidl;
 import com.example.aidlserver.Person;
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 List<Person> persons = iImoocAidl.add(new Person("zhangsan", 21));
                 Log.d(TAG, "onClick: Persons=" + persons.toString());// 此处toString方法已经在Person类中重写了
+                Toast.makeText(MainActivity.this, "Persons="+persons.toString(), Toast.LENGTH_SHORT).show();
 
             } catch (RemoteException e) {
                 e.printStackTrace();
