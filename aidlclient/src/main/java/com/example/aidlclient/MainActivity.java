@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import com.example.aidlserver.IImoocAidl;
 import com.example.aidlserver.Person;
@@ -21,9 +20,9 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     String TAG = getClass().getSimpleName();
 
-    private EditText et_num1;
-    private EditText et_num2;
-    private EditText et_res;
+//    private EditText et_num1;
+//    private EditText et_num2;
+//    private EditText et_res;
     private Button btn_add;
     IImoocAidl iImoocAidl;
 
@@ -53,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        et_num1 = (EditText) findViewById(R.id.et_num1);
-        et_num2 = (EditText) findViewById(R.id.et_num2);
-        et_res = (EditText) findViewById(R.id.et_res);
+//        et_num1 = (EditText) findViewById(R.id.et_num1);
+//        et_num2 = (EditText) findViewById(R.id.et_num2);
+//        et_res = (EditText) findViewById(R.id.et_res);
         btn_add = (Button) findViewById(R.id.btn_add);
         btn_add.setOnClickListener(new BtnClickListener());
     }
